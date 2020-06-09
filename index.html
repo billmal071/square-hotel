@@ -29,39 +29,40 @@
 
 <body>
   <!--Navbar-->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navContent"
-      aria-controls="navContent" aria-label="toggle navigation" aria-expanded="false">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse justify-content-center" id="navContent">
-      <ul class="navbar-nav">
-        <li class="nav-item spacer pt-max">
-          <a class="nav-link active" href="#">Home</a>
-        </li>
-
-        <li class="nav-item spacer pt-max">
-          <a class="nav-link">Room</a>
-        </li>
-
-        <li class="nav-item spacer">
-          <a class="nav-link text-primary">
-            <span class="brand-header">SQUARE</span><br />
-            <span class="brand-text pl-5">Hotel</span>
-          </a>
-        </li>
-
-        <li class="nav-item spacer pt-max">
-          <a class="nav-link">Services</a>
-        </li>
-
-        <li class="nav-item spacer pt-max">
-          <a class="nav-link">Contact</a>
-        </li>
-      </ul>
+  <header class="header">
+    <!-- the page's logo -->
+    <h1 class="heading">
+        <span class="head">square</span>
+        <span>hotel</span>
+    </h1>
+    <!-- burger menu -->
+    <div class="burger">
+        <div class="line line1"></div>
+        <div class="line line2"></div>
+        <div class="line line3"></div>
     </div>
-  </nav>
+    <!-- navigation links -->
+    <nav class="nav-links">
+        <!-- left links -->
+        <div class="left">
+            <div>
+                <a href="./index.html">home</a>
+            </div>
+            <div class="active">
+                <a href="./rooms.html">rooms</a>
+            </div>
+        </div>
+        <!-- right links -->
+        <div class="right">
+            <div>
+                <a href="./FacilitiesAndServices.html">services</a>
+            </div>
+            <div>
+                <a href="./contact.html">contact</a>
+            </div>
+        </div>
+    </nav>
+</header>
 
   <div class="image-container">
     <img class="" src="./img/pool.jpeg" alt="Pool jpeg" />
@@ -138,37 +139,6 @@
       </div>
     </div>
   </div>
-
-  <footer>
-    <div class="above">
-      <div class="faqs">
-        <h5>faqs</h5>
-        <ul>
-          <li>help</li>
-          <li>affliate</li>
-          <li>privacy policy</li>
-          <li>terms & conditions</li>
-        </ul>
-      </div>
-      <div class="newsletter">
-        <h5 id="text-5">sign up to get our newsletter</h5>
-        <div id="email-1">
-          <input type="email" placeholder="Your email address...">
-          <button type="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i>
-            </i></button>
-        </div>
-      </div>
-    </div>
-    <div class="contact">
-      <h1 id="text-6">square <span id="text-7">&copy;2020 Square hotel</span></h1>
-      <ul>
-        <li> <i class="fa fa-twitter"></i></li>
-        <li> <i class="fa fa-facebook"></i> </li>
-        <li> <i class="fa fa-instagram"></i> </li>
-      </ul>
-    </div>
-  </footer>
-
 
 </body>
 

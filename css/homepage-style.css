@@ -41,7 +41,7 @@
   }
 } */
 
-@media only screen and (max-width: 767.9px) {
+@media only screen and (max-width: 768px) {
   .center-bottom {
     position: absolute;
     top: 100%;
