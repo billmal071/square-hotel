@@ -1,0 +1,141 @@
+.header{
+  position: relative;
+  /* border: 1px solid blue; */
+  box-sizing: border-box;
+  padding: 10px;
+  display: flex;
+  align-items: flex-end;
+}
+/* the logo */
+.header .heading{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #808052;
+  font-size: 1.5rem;
+  font-family: 'Playfair Display', serif;
+  text-transform: capitalize;
+  font-weight: 100;
+  pointer-events: none;
+}
+.head{
+  font-family: 'Playfair Display', serif;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+/* the nav links */
+.header .nav-links{
+  /* border:1px solid red; */
+  text-transform: capitalize;
+  width: 100%;
+  margin-top:60px;
+  display: flex;
+  justify-content: space-around;
+}
+.nav-links>div{
+  display: flex;
+  justify-content: space-evenly;
+  /* border: 1px solid black; */
+  width: 40%;
+}
+.nav-links>div a{
+  color: black;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 600;
+}
+.nav-links>div .active a{
+  color: #808052;
+}
+/* the burger menu */
+.burger{
+  cursor: pointer;
+}
+.burger .line{
+  width: 30px;
+  height: 3px;
+  background-color: #808052;
+  margin: 5px;
+  display:none;
+}
+
+
+.page-title{
+  background-color: #808052;
+  padding: 30px;
+  font-family: 'Playfair Display', serif;
+  color:#fffafa;
+}
+
+
+
+
+.brand-header {
+  font-weight: 400;
+  font-size: 52px;
+  font-family: "Bentham", serif;
+
+}
+
+.brand-text {
+  font-family: "Bentham", serif;
+  font-size: 28px;
+  font-weight: normal;
+
+}
+
+.center-bottom {
+  position: absolute;
+  bottom: 20%;
+  left: 20%;
+}
+
+.center-left {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  color: white;
+}
+
+.date-picker-box {
+  width: 100% auto;
+  background: white;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+img {
+  height: 100vh;
+  width: 100%;
+}
+
+.image-container {
+  position: relative;
+  /* text-align: center; */
+}
+
+.img-header {
+  font-family: "Bentham", serif;
+  font-weight: normal;
+  font-size: 60px;
+}
+
+li {
+  color: black;
+}
+
+.pt-max {
+  padding-top: 85px;
+}
+
+.spacer {
+  margin-left: 50px;
+  margin-right: 50px;
+}
