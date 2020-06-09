@@ -1,41 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-    <link rel="stylesheet" href="./style/contact.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <script defer src="./js/rooms.js"></script>
     <title>Square Hotel</title>
 </head>
+
 <body>
-    
-    <div class="Container">
-        <header>
 
-            <nav class="flex-container">
-                <ul>
-                    <li>Home</li>
-                    <li>Rooms</li>
-                </ul>
-
-                <div class="logo">
-                    <p>SQUARE</p>
-                    <span>Hotel</span>
+    <header class="header">
+        <!-- the page's logo -->
+        <h1 class="heading">
+            <span class="head">square</span>
+            <span>hotel</span>
+        </h1>
+        <!-- burger menu -->
+        <div class="burger">
+            <div class="line line1"></div>
+            <div class="line line2"></div>
+            <div class="line line3"></div>
+        </div>
+        <!-- navigation links -->
+        <nav class="nav-links">
+            <!-- left links -->
+            <div class="left">
+                <div>
+                    <a href="./index.html">home</a>
                 </div>
-
-                <ul>
-                    <li>Services</li>
-                    <li>Contacts</li>
-                </ul>
-            </nav>
-
-            <div>
-                <h2>Contact Us</h2>
+                <div class="active">
+                    <a href="./rooms.html">rooms</a>
+                </div>
             </div>
+            <!-- right links -->
+            <div class="right">
+                <div>
+                    <a href="./FacilitiesAndServices.html">services</a>
+                </div>
+                <div>
+                    <a href="./contact.html">contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-        </header>
+    <div class="Container">
 
         <main class="container-fluid">
 
@@ -43,7 +57,7 @@
                 <div class="col-sm-6 image">
                     <img src="./img/Rectangle 27 (1).png" alt="">
                 </div>
-    
+
                 <div class="col-sm-6 form">
 
                     <form action="">
@@ -77,19 +91,20 @@
                 <li><a href="#">Privacy Policy</a></li>
                 <li><a href="#">Terms & Conditions</a></li>
             </ul>
-    
+
             <div>
                 <p><label for="">Sign up to get our newsletter</label></p>
-                <p><input type="text" placeholder="Your email address..."> <button><img src="./img/Vector.svg" alt=""></button> </p>
-            </div>    
+                <p><input type="text" placeholder="Your email address..."> <button><img src="./img/Vector.svg"
+                            alt=""></button> </p>
+            </div>
         </div>
-       
+
         <hr>
 
         <div class="flex-container-bottom">
-            
+
             <h3>SQUARE <span>© 2020 Square Hotel</span></h3>
-            
+
 
             <ul>
                 <li><a href=""><i class="fab fa-twitter"></i></a></li>
@@ -98,11 +113,12 @@
             </ul>
 
         </div>
-      
+
 
     </footer>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </body>
+
 </html>
