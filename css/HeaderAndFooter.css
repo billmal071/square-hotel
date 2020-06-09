@@ -1,16 +1,12 @@
-*,
-*::after,
-*::before {
+*, *::after, *::before{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-html {
+html{
     font-size: 20px;
 }
-
-body {
+body{
     background-color: #fffafa;
 }
 
@@ -18,18 +14,16 @@ ul li {
     list-style-type: none;
 }
 
-.header {
+.header{
     position: relative;
     /* border: 1px solid blue; */
     box-sizing: border-box;
     padding: 10px;
     display: flex;
     align-items: flex-end;
-    background-color: rgba(245, 245, 245, 0.6);;
 }
-
 /* the logo */
-.header .heading {
+.header .heading{
     position: absolute;
     top: 0;
     left: 0;
@@ -46,54 +40,63 @@ ul li {
     font-weight: 100;
     pointer-events: none;
 }
-
-.header .heading .head {
+.head{
+    font-family: 'Playfair Display', serif;
     text-transform: uppercase;
     font-size: 2rem;
 }
 
 /* the nav links */
-.header .nav-links {
+.header .nav-links{
     /* border:1px solid red; */
     text-transform: capitalize;
     width: 100%;
-    margin-top: 60px;
+    margin-top:60px;
     display: flex;
     justify-content: space-around;
 }
-
-.nav-links>div {
+.nav-links>div{
     display: flex;
     justify-content: space-evenly;
     /* border: 1px solid black; */
     width: 40%;
 }
-
-.nav-links>div a {
+.nav-links>div a{
     color: black;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
     font-size: 600;
 }
-
-.nav-links>div .active a {
+.nav-links>div .active a{
     color: #808052;
 }
+/* the burger menu */
+.burger{
+    cursor: pointer;
+}
+.burger .line{
+    width: 30px;
+    height: 3px;
+    background-color: #808052;
+    margin: 5px;
+    display:none;
+}
 
-/* from 600px of screenwidth downward- show burger and hide nav links */
 
-
-.page-title {
+.page-title{
     background-color: #808052;
     padding: 30px;
     font-family: 'Playfair Display', serif;
-    color: #fffafa;
+    color:#fffafa;
 }
 
 /* main */
 .main-page {
     width: 90%;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 /* sections */
@@ -119,14 +122,16 @@ ul li {
     font-family: 'Poppins', sans-serif;
 }
 
-.standard span, .economy span {
+.standard span,
+.economy span {
     display: block;
     margin: 10px 0;
     font-size: 0.7rem;
     font-family: 'Poppins', sans-serif;
 }
 
-.standard span.price, .economy span.price {
+.standard span.price,
+.economy span.price {
     font-size: 0.9rem;
     color: #808052;
 }
@@ -135,7 +140,8 @@ ul li {
     margin-top: 20px;
 }
 
-.standard a.book-now, .economy a.book-now {
+.standard a.book-now,
+.economy a.book-now {
     background-color: #808052;
     color: #fffafa;
     font-size: 1.3rem;
@@ -145,7 +151,8 @@ ul li {
     font-family: 'Poppins', sans-serif;
 }
 
-.standard a.more, .economy a.more {
+.standard a.more,
+.economy a.more {
     color: black;
     text-decoration: none;
     border-bottom: 1px solid black;
@@ -155,12 +162,14 @@ ul li {
     text-transform: capitalize;
 }
 
-.standard a.more::after, .economy a.more::after {
+.standard a.more::after,
+.economy a.more::after {
     content: ">";
     border-bottom: none;
 }
 
-.standard .photo img, .economy .photo img  {
+.standard .photo img,
+.economy .photo img {
     width: 100%;
     height: 456px;
 }
@@ -172,7 +181,7 @@ ul li {
     grid-gap: 20px;
 }
 
-.ml {
+ml {
     margin-left: 20px;
 }
 
@@ -188,7 +197,8 @@ ul li {
 footer {
     background: #333333;
     height: 46vh;
-    margin-top: 50px;;
+    margin-top: 50px;
+    ;
 }
 
 footer .above {
@@ -268,7 +278,8 @@ footer .contact #text-6 {
 footer .contact ul {
     display: flex;
     flex-direction: row;
-    color: #F5F5F5;;
+    color: #F5F5F5;
+    ;
 }
 
 footer .contact ul li {
@@ -276,16 +287,90 @@ footer .contact ul li {
 }
 
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-    .header .heading {
-        font-size: 12px;
+/* For the mobile view */
+@media only screen and (max-width: 768px) {
+    /* take the logo to the left, hide the nav links, and show the burger icon */
+
+     .header{
+        display:block;
+        overflow: hidden;
+     }
+     .header .head {
+         margin-left: 15px;
+     }
+    /*  shift logo to left*/
+    .header .heading{
+        position: relative;
+        width: 40%;
+    }
+    /* arrange the nav links ontop of each other*/
+    .header .nav-links{
+        display: block;
+        margin-top: -40px;
+        background-color: white;
+    }
+    .nav-links>div{
+        display: block;
+        width: 100%;
+    }
+    .nav-links>div div{
+        text-align: center;
+    }
+    .nav-links>div div:hover{
+        background-color: slategray;
+    }
+    .nav-links>div div a{
+        display:block;
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        transition: transform 0.4s linear;
+        
+    }
+    .nav-links>div div a:hover {
+        transform: translateX(20px);
+        color: white;
+    }
+    /* hide nav bar */
+    .header .nav-links{
+        max-height: 0;
+        pointer-events: none;
+        transition: max-height 0.3s linear;
     }
 
-    .nav-links {
-        font-size: 15px;
+    .header .nav-links-show{
+        max-height: 100vh;
+        pointer-events: all;
     }
-
+    /* show burger */
+    .burger{
+        position: relative;
+        top:-35px;
+        padding: 10px;
+        transition: transform 0.3s linear;
+        width: fit-content;
+        height: fit-content;
+        margin-left: auto;
+    }
+    .burger:hover{
+        transform: scale(1.1);
+    }
+    .burger .line{
+        display:block;
+        transition: all 0.3s linear;
+    }
+    
+    /* turn burger to X */
+    .x-bar .line1{
+        transform: rotate(-45deg) translate(-5px,6px);
+    }
+    .x-bar .line2{
+        opacity: 0;
+    }
+    .x-bar .line3{
+        transform: rotate(45deg) translate(-5px,-6px);
+    }
+    /* reduce the padding of the  banner*/
     .page-title .title {
         font-size: 20px;
         text-align: center;
@@ -315,35 +400,39 @@ footer .contact ul li {
         grid-gap: 10px;
     }
 
-    .economy .photo img, .standard .photo img {
+    .economy .photo img,
+    .standard .photo img {
         height: 200px;
     }
 
-    .economy .text .heading, .standard .text .heading {
+    .economy .text .heading,
+    .standard .text .heading {
         font-size: 30px;
         text-align: center;
     }
 
-    .economy .text .price, .standard .text .price{
+    .economy .text .price,
+    .standard .text .price {
         font-size: 15px;
     }
 
-    .economy .text .links .book-now, .standard .text .links .book-now {
+    .economy .text .links .book-now,
+    .standard .text .links .book-now {
         font-size: 12px;
     }
 
-/* footer */
-    footer .above {
+     /* footer */
+     footer .above {
         padding-top: 30px;
     }
 
-    footer .above .faqs{
+    footer .above .faqs {
         font-size: 10px;
     }
 
     footer .above #text-5 {
         font-size: 10px;
-    }    
+    }
 
     #email-1 input[type=email] {
         font-size: 10px;
@@ -356,7 +445,7 @@ footer .contact ul li {
     footer .contact {
         margin: 0 10px 0 10px;
         padding-top: 0;
-    } 
+    }
 
     footer .contact #text-6 {
         font-size: 15px;
@@ -367,24 +456,11 @@ footer .contact ul li {
     }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-    .economy .text .links .book-now, .standard .text .links .book-now {
-        font-size: 12px;
-    }
-}
-
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    .economy .text .links .book-now, .standard .text .links .book-now {
+
+    .economy .text .links .book-now,
+    .standard .text .links .book-now {
         font-size: 12px;
     }
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-    
 }

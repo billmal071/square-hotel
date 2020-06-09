@@ -9,6 +9,11 @@ html{
 body{
     background-color: #fffafa;
 }
+
+ul li {
+    list-style-type: none;
+}
+
 .header{
     position: relative;
     /* border: 1px solid blue; */
@@ -85,56 +90,69 @@ body{
     color:#fffafa;
 }
 
+/* main */
+.main-page {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 /* sections */
-.section{
-    padding:40px;
+.standard {
+    margin-top: 80px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px; 
-    margin: 20px 0;
+    grid-template-columns: 35% 65%;
+    grid-gap: 20px;
 }
-.photo-left .photo{
-    grid-column: 1/span 1;
-    grid-row: 1;
-}
-.photo-left .text{
-    grid-column: 2/span 1;
-}
-.section .text{
+
+.text {
     text-align: left;
 }
-.section .heading{
+
+.heading {
     color: #808052;
     font-family: 'Playfair Display', serif;
 }
-.section .body{
+
+.body {
     margin: 10px 0;
     font-size: 0.7rem;
     font-family: 'Poppins', sans-serif;
 }
-.section span{
+
+.standard span,
+.economy span {
     display: block;
     margin: 10px 0;
     font-size: 0.7rem;
     font-family: 'Poppins', sans-serif;
 }
-.section span.price{
+
+.standard span.price,
+.economy span.price {
     font-size: 0.9rem;
     color: #808052;
 }
-.section .links{
+
+.links {
     margin-top: 20px;
 }
-.section a.book-now{
+
+.standard a.book-now,
+.economy a.book-now {
     background-color: #808052;
     color: #fffafa;
     font-size: 1.3rem;
     text-transform: uppercase;
     text-decoration: none;
-    padding: 15px 30px ;
+    padding: 15px 30px;
     font-family: 'Poppins', sans-serif;
 }
-.section a.more{
+
+.standard a.more,
+.economy a.more {
     color: black;
     text-decoration: none;
     border-bottom: 1px solid black;
@@ -143,129 +161,142 @@ body{
     font-family: 'Poppins', sans-serif;
     text-transform: capitalize;
 }
-.section a.more::after{
+
+.standard a.more::after,
+.economy a.more::after {
     content: ">";
     border-bottom: none;
 }
-.section .photo img{
+
+.standard .photo img,
+.economy .photo img {
     width: 100%;
-    height: 100%;
+    height: 456px;
+}
+
+.economy {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: 65% 35%;
+    grid-gap: 20px;
+}
+
+ml {
+    margin-left: 20px;
+}
+
+.mr {
+    margin-right: 20px;
+}
+
+.mt {
+    margin-top: 20px;
 }
 
 /* footer */
-footer{
-    background-color: rgb(45,45,45);
-    padding: 50px;
-    color: #fffafa;
-    font-family: 'Poppins', sans-serif;
-    font-size: .8rem;
+footer {
+    background: #333333;
+    height: 46vh;
+    margin-top: 50px;
+    ;
 }
-footer .above{
+
+footer .above {
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
-    align-items: flex-end;
-    border-bottom: 2px solid #fffafa;
-    padding: 30px;
+    padding-top: 90px;
+    padding-bottom: 40px;
 }
-/* faqs part */
-.above .faqs h5{
+
+footer .above .faqs {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: #F5F5F5;
     text-transform: uppercase;
-    font-size: 0.9rem;
-}
-.above .faqs ul{
-    list-style: none;
-    text-transform: capitalize;
-}
-.above .faqs ul a{
-    color: #fffafa;
-    text-decoration: none;
-}
-.above .faqs ul a:hover{
-    color: #808052;
+    list-style-type: none;
 }
 
-/* newletter part */
-.newsletter .overflow-hidden{
-    overflow: hidden;
-}
-.above .newsletter .input-container{
-    margin-top: 30px;
-    border-bottom: 2px solid grey;
-    display: flex;
-    height: 30px;
-    width: 250px;
-    position: relative;
+#text-5 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: #F5F5F5;
 }
 
-.above .newsletter .input-container input{
-    width: 90%;
-    background-color: transparent;
-    border: 0;
+#email-1 {
+    border-bottom: 1px solid #F5F5F5;
+}
+
+#email-1 input[type=email] {
+    padding-top: 20px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: rgba(245, 245, 245, 0.6);
+    border: none;
+    background-color: #333333;
     outline: none;
-    color: #fffafa;
-    font-family: 'Poppins', sans-serif;
-}
-.above .newsletter .input-container input::placeholder{
-    color:#ccc;
-    font-family: 'Poppins', sans-serif;
-}
-.above .newsletter .input-container button{
-    width: 10%;
-    background-color: transparent;
-    border: 0;
-    outline: none;
-    cursor: pointer;
-    color: #fffafa;
-    transition: color .2s linear;
-}
-.above .newsletter .input-container button:hover{
-    color: #808052;
-}
-.border-transition{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    border-bottom: 2px solid #fffafa;
-    bottom: -1.5px;
-    left: 0;
-    transform: translateX(-100%);
-    transition: transform 0.3s linear;
-    pointer-events: none;
-}
-.input-container input:focus + .border-transition,
-.input-container input:valid + .border-transition{
-    transform: translateX(0%);
 }
 
-/* below */
-footer .below{
+footer .contact {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    margin-top: 30px;
+    margin: 0 150px 0 150px;
+    padding-top: 30px;
+    border-top: 1px solid #F5F5F5;
+}
+
+footer .contact #text-6 {
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 48px;
+    color: #F5F5F5;
+    text-transform: uppercase;
+}
+
+#text-7 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: rgba(245, 245, 245, 0.6);
     text-transform: capitalize;
 }
 
-.below .social-icons{
-    font-size: 1.2rem;
+footer .contact ul {
+    display: flex;
+    flex-direction: row;
+    color: #F5F5F5;
+    ;
 }
-.below .social-icons a{
-    color: white;
-    text-decoration: none;
-    margin: 5px;
+
+footer .contact ul li {
+    padding: 10px;
 }
-.below .social-icons a:hover{
-    color: #808052;
-}
+
 
 /* For the mobile view */
-@media screen and (max-width:785px){
+@media only screen and (max-width: 768px) {
     /* take the logo to the left, hide the nav links, and show the burger icon */
 
      .header{
         display:block;
         overflow: hidden;
+     }
+     .header .head {
+         margin-left: 15px;
      }
     /*  shift logo to left*/
     .header .heading{
@@ -340,63 +371,96 @@ footer .below{
         transform: rotate(45deg) translate(-5px,-6px);
     }
     /* reduce the padding of the  banner*/
-    .page-title{
-        padding: 20px;
+    .page-title .title {
+        font-size: 20px;
+        text-align: center;
     }
 
-    /* make the grid flow of gallery to be row */
-    .section{
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-    }
-    .photo-left .photo{
-        grid-column: 1;
-        grid-row: 2/ span 1;
-    }
-    .photo-left .text{
-        grid-column: 1/span 1;
-    }
-
-    .section a.book-now{
-        font-size: 1rem;
-        padding: 8px 12px;
-    }
-
-    .section a.more{
-        font-size: .6rem;
-        margin: 0 10px;
-    }
-    /* arrange the footer items in rows */
-    footer{
-        padding: 30px;
-    }
-    footer .above{
+    .standard {
+        margin-top: 80px;
+        display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 0;
+        grid-gap: 10px;
+        grid-template-columns: 50% 50%;
     }
-    footer .above>div{
-        margin: 30px 0;
+
+    .standard .text-small-screen {
+        order: 2;
     }
-    
-    .above .newsletter .input-container{
-        margin-top: 0px;
+
+    .standard .img-small-screen {
+        order: 1;
+        margin-top: 20px;
+    }
+
+    .economy {
+        margin-top: 80px;
+        display: flex;
+        flex-direction: column;
+        grid-gap: 10px;
+    }
+
+    .economy .photo img,
+    .standard .photo img {
+        height: 200px;
+    }
+
+    .economy .text .heading,
+    .standard .text .heading {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .economy .text .price,
+    .standard .text .price {
+        font-size: 15px;
+    }
+
+    .economy .text .links .book-now,
+    .standard .text .links .book-now {
+        font-size: 12px;
+    }
+
+     /* footer */
+     footer .above {
+        padding-top: 30px;
+    }
+
+    footer .above .faqs {
+        font-size: 10px;
+    }
+
+    footer .above #text-5 {
+        font-size: 10px;
+    }
+
+    #email-1 input[type=email] {
+        font-size: 10px;
+    }
+
+    .fa-paper-plane {
+        font-size: 10px;
+    }
+
+    footer .contact {
+        margin: 0 10px 0 10px;
+        padding-top: 0;
+    }
+
+    footer .contact #text-6 {
+        font-size: 15px;
+    }
+
+    footer .contact #text-7 {
+        font-size: 10px;
     }
 }
-@media screen and (max-width: 600px){
-    footer .below{
-        flex-direction: column;
-    }
-    .below .social-icons{
-        width: 50%;
-        display: flex;
-        justify-content: space-evenly;
-    }
-    .copyright{
-        font-size: 0.7rem;
-    }
-    .copyright .head{
-        font-size: 1.1rem;
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+    .economy .text .links .book-now,
+    .standard .text .links .book-now {
+        font-size: 12px;
     }
 }
