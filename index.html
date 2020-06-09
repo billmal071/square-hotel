@@ -10,13 +10,11 @@
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
 
   <link href="https://fonts.googleapis.com/css2?family=Bentham&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./css/homepage-style.css" type="text/css" />
-  <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
-
+  <link rel="stylesheet" href="./css/homepage-style.css" />
+  <link rel="stylesheet" href="./css/HeaderAndFooter.css">
   <title>Square Hotel</title>
 
   <!--Scripts-->
-  <script defer src="./js/rooms.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
     crossorigin="anonymous"></script>
@@ -70,7 +68,7 @@
     <img class="" src="./img/pool.jpeg" alt="Pool jpeg" />
 
     <div class="center-left">
-      <h3 class="brand-header">Luxury and Comfort</h3>
+      <h3 class="h3-responsive brand-header">Luxury and Comfort</h3>
       <p>
         Feel at home with nature. You'll be even closer to home than you were
         at home.
@@ -80,7 +78,7 @@
     <div class="center-bottom">
       <div class="date-picker-box">
         <div class="row">
-          <div class="col-auto px-5 pt-2">
+          <div class="col-sm-12 col-lg-auto px-lg-3 pt-2">
             <p style="font-size: 12px;">check-in date</p>
             <br />
             <p>
@@ -93,7 +91,7 @@
             </p>
           </div>
 
-          <div class="col-auto px-5 pt-2">
+          <div class="col-sm-12 col-lg-auto px-lg-3 pt-2">
             <p style="font-size: 12px;">check-out date</p>
             <br />
             <p>
@@ -106,7 +104,7 @@
             </p>
           </div>
 
-          <div class="col-auto px-5 pt-2">
+          <div class="col-sm-12 col-lg-auto px-lg-3 pt-2">
             <p style="font-size: 12px;">Guests</p>
             <br />
             <p>
@@ -119,7 +117,7 @@
             </p>
           </div>
 
-          <div class="col-auto px-5 pt-2">
+          <div class="col-sm-12 col-lg-auto px-lg-3 pt-2">
             <p style="font-size: 12px;">
               Rooms
             </p>
@@ -134,15 +132,14 @@
             </p>
           </div>
 
-          <div class="col-auto bg-primary text-white">
-            <div>
-              <h2 style="padding-top: 38px;">BOOK A ROOM</h2>
-            </div>
+          <div class="col-sm-12 col-lg-auto bg-primary text-white" role="button">
+            <h2 class="pt-4 pb-2">BOOK A ROOM</h2>
           </div>
         </div>
       </div>
     </div>
   </div>
+
 </body>
 
 </html>
