@@ -9,8 +9,9 @@ label{
 }
 
 /* BODY */
-
-
+.left div a,.right div a {
+    font-size: 20px;
+}
 
 .page-title{
     background-color: #808052;
@@ -19,51 +20,12 @@ label{
     color:#fffafa;
 }
 
-
-
+.header {
+    margin-bottom: 20px;
+}
 .Container{
     width: 100%;
     font-family: 'Poppins', sans-serif;
-}
-
-nav{
-    padding: 19px 180px 24px 180px;
-    display: flex;
-    justify-content: space-between;
-}
-
-nav li{
-    float: left;
-    padding: 80px 45px 0 45px;
-    list-style: none;
-    font-size: 20px;
-    color: #333333;
-}
-
-nav li:hover{
-    color: #808052;
-    cursor: pointer;
-}
-
-.logo{
-    color: #808052;
-    text-align: center;
-    font-size: 36px;
-    font-family: 'Playfair Display', serif;
-}
-
-.logo p{
-    margin-bottom: -10px;                                                                                                                                                                                       
-    font-size: 64px;
-}
-
-header h2{
-    padding: 46px 76px;
-    background: #808052;
-    color: white;
-    font-family: 'Playfair Display', serif;
-    font-size: 48px;
-    line-height: 64px;
 }
 
 .row{
@@ -75,6 +37,7 @@ main img{
     height: 700px;
     background: #C4C4C4;
     margin-left: -30px;
+    margin-top: 10px;
 }
 
 form{
@@ -130,29 +93,6 @@ form button{
         padding: 0 20px 0 20px;
     }
 
-    nav ul {
-        display: none;
-    }
-
-    nav{
-        padding: 0;
-    }
-
-    .logo{
-        margin: auto;
-        padding: 50px 0 50px 0;
-    }
-
-    .logo p{
-        margin-bottom: -5px;
-    }
-
-    header h2{
-        padding: 26px 36px;
-        background: #808052;
-        font-size: 38px;
-    }
-
     main .image{
         display: none
     }
@@ -181,67 +121,4 @@ form button{
         resize: none;
     }
 
-}
-
-@media screen and (max-width: 1100px) {
-
-    footer{
-        padding: 40px 20px 43px 20px;
-        text-align: center;
-        font-size: 16px;
-    }
-
-    footer button{
-        border: none;
-    }
-
-    .flex-container-top{
-        display: block;
-    }
-
-    footer .flex-container-top li{
-        padding-bottom: 8px;
-    }
-
-    footer .flex-container-top ul{
-        width: 100%;    
-        padding-bottom: 30px;
-    }
-
-    footer .flex-container-top p label{
-        font-weight: bold;   
-    }
-
-    footer .flex-container-top p input{
-        padding: 10px 0 5px 0;
-    }
-
-    footer hr{
-        display: none;
-    }
-
-    .flex-container-bottom{
-        display: block;
-    }
-
-    footer .flex-container-bottom h3{
-        padding: 50px 0 20px 0;
-        font-size: 50px;
-    }
-
-    footer .flex-container-bottom li{
-        padding: 0 20px 0 20px;
-    }
-
-    footer .flex-container-bottom ul{
-        padding: 30px 20px 0 20px;
-        display: inline-block;
-    }
-}
-
-@media screen and (max-width: 1279px) {
-
-    nav li{
-        display: none;
-    }
 }
