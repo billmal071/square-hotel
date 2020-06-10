@@ -117,8 +117,6 @@ ul li {
 .mt {
     margin-top: 20px;
 }
- 
-
 /* For the mobile view */
 @media only screen and (max-width: 768px) {
     /* take the logo to the left, hide the nav links, and show the burger icon */

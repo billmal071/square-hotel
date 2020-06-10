@@ -1,38 +1,48 @@
-*{padding: 0; margin: 0; box-sizing: border-box;}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
-button, input, textarea{
+button,
+input,
+textarea {
     outline: none;
 }
 
-label{
+label {
     font-weight: lighter;
 }
 
 /* BODY */
-.left div a,.right div a {
+.left div a,
+.right div a {
     font-size: 20px;
 }
 
-.page-title{
+.header {
+    padding-bottom: 20px;
+}
+
+.page-title {
     background-color: #808052;
     padding: 30px;
     font-family: 'Playfair Display', serif;
-    color:#fffafa;
+    color: #fffafa;
 }
 
-.header {
-    /* margin-bottom: 20px; */
-}
-.Container{
+
+
+.Container {
     width: 100%;
     font-family: 'Poppins', sans-serif;
 }
 
-.row{
+.row {
     margin-top: -10px;
 }
 
-main img{
+main img {
     width: 100%;
     height: 700px;
     background: #C4C4C4;
@@ -40,11 +50,11 @@ main img{
     margin-top: 10px;
 }
 
-form{
+form {
     padding: 50px 0 0 0;
 }
 
-form p{
+form p {
     font-family: 'Poppins', sans-serif;
     text-align: left;
     color: #333333;
@@ -53,27 +63,28 @@ form p{
     font-weight: lighter;
 }
 
-form h3{
+form h3 {
     color: #808052;
     font-size: 33px;
     line-height: 54px;
     font-weight: lighter;
 }
 
-form input, textarea{
+form input,
+textarea {
     width: 100%;
     padding: 10px;
 }
 
-form textarea{
+form textarea {
     height: 183px;
     overflow: auto;
     resize: none;
 }
 
-form button{
+form button {
     border: none;
-    padding: 20px 30px; 
+    padding: 20px 30px;
     background: #808052;
     color: white;
     font-size: 25px;
@@ -84,41 +95,54 @@ form button{
 }
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
+
     /* GRIDS */
-    .col-6 {width: 100%;}
+    .col-6 {
+        width: 100%;
+    }
 
     /* BODY */
-    .Container{
+    .Container {
         padding: 0 20px 0 20px;
     }
 
-    main .image{
+    main .image {
         display: none
     }
 
-    .col-sm-6{
+    .col-sm-6 {
         width: 100%;
         padding: 20px 0 40px 0;
     }
 
-    form h3{    
+    form h3 {
         font-size: 25px;
     }
 
-    form p{
+    form p {
         padding: 20px 0;
         font-size: 14px;
     }
 
-    form input, textarea{
+    form input,
+    textarea {
         padding: 20px;
     }
 
-    form textarea{
+    form textarea {
         height: 100px;
         overflow: auto;
         resize: none;
     }
 
+    form button {
+        padding: 10px 15px;
+        font-size: 16px;
+    }
+
+    .text-small {
+        font-size: 22px;
+    }
+    
 }
