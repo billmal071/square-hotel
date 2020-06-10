@@ -199,7 +199,6 @@ footer {
     background: #333333;
     height: 46vh;
     margin-top: 50px;
-    ;
 }
 
 footer .above {
@@ -280,7 +279,6 @@ footer .contact ul {
     display: flex;
     flex-direction: row;
     color: #F5F5F5;
-    ;
 }
 
 footer .contact ul li {
