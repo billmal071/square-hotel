@@ -59,7 +59,7 @@ ul li {
     width: 100%;
     margin-top:60px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 .nav-links>div{
     display: flex;
