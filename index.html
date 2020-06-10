@@ -1,145 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fonts link -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
-
-  <link href="https://fonts.googleapis.com/css2?family=Bentham&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./css/homepage-style.css" />
-  <link rel="stylesheet" href="./css/HeaderAndFooter.css">
-  <title>Square Hotel</title>
-
-  <!--Scripts-->
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-    crossorigin="anonymous"></script>
-  <script src="https://use.fontawesome.com/9f97c741db.js"></script>
+    <!-- css files -->
+    <link rel="stylesheet" href="./css/homepage-style.css" />
+    <link rel="stylesheet" href="./css/HeaderAndFooter.css">
+    <title>Home | Square Hotel</title>
 </head>
-
 <body>
-  <!--Navbar-->
-  <header class="header">
-    <!-- the page's logo -->
-    <h1 class="heading">
-        <span class="head">square</span>
-        <span>hotel</span>
-    </h1>
-    <!-- burger menu -->
-    <div class="burger">
-        <div class="line line1"></div>
-        <div class="line line2"></div>
-        <div class="line line3"></div>
-    </div>
-    <!-- navigation links -->
-    <nav class="nav-links">
-        <!-- left links -->
-        <div class="left">
-            <div>
-                <a href="./index.html">home</a>
-            </div>
-            <div class="active">
-                <a href="./rooms.html">rooms</a>
-            </div>
+    <header class="header">
+        <!-- the page's logo -->
+        <h1 class="heading">
+            <span class="head">square</span>
+            <span>hotel</span>
+        </h1>
+        <!-- burger menu -->
+        <div class="burger">
+            <div class="line line1"></div>
+            <div class="line line2"></div>
+            <div class="line line3"></div>
         </div>
-        <!-- right links -->
-        <div class="right">
-            <div>
-                <a href="./FacilitiesAndServices.html">services</a>
+        <!-- navigation links -->
+        <nav class="nav-links">
+            <!-- left links -->
+            <div class="left">
+                <div class="active">
+                    <a href="#">home</a>
+                </div>
+                <div>
+                    <a href="rooms.html">rooms</a>
+                </div>
             </div>
-            <div>
-                <a href="./contact.html">contact</a>
+            <!-- right links -->
+            <div class="right">
+                <div>
+                    <a href="FacilitiesAndServices.html">services</a>
+                </div>
+                <div>
+                    <a href="contact.html">contact</a>
+                </div>
             </div>
+        </nav>
+    </header>
+
+    <!--  banner -->
+    <div class="banner">
+        <div class="text">
+            <h2 class="heading">
+                Luxury and Comfort
+            </h2>
+            <p class="paragraph">
+                Feel at home with nature. You'll feel even closer to home than you were at home.
+            </p>
         </div>
-    </nav>
-</header>
 
-  <div class="image-container">
-    <img class="" src="./img/pool.jpeg" alt="Pool jpeg" />
-
-    <div class="center-left">
-      <h3 class="h3-responsive brand-header">Luxury and Comfort</h3>
-      <p>
-        Feel at home with nature. You'll be even closer to home than you were
-        at home.
-      </p>
-    </div>
-
-    <div class="center-bottom">
-      <div class="date-picker-box">
-        <div class="row">
-          <div class="col-sm-12 col-lg-auto px-lg-3 pt-2">
-            <p style="font-size: 12px;">check-in date</p>
-            <br />
-            <p>
-              12/12/2020
-              <span>
-                <button class="btn" type="button" aria-haspopup="true" aria-expanded="false">
-                  <i class="fa fa-angle-down" aria-hidden="true"></i>
-                </button>
-              </span>
-            </p>
-          </div>
-
-          <div class="col-sm-12 col-lg-auto px-lg-3 pt-2">
-            <p style="font-size: 12px;">check-out date</p>
-            <br />
-            <p>
-              01/01/2077
-              <span>
-                <button class="btn" type="button" aria-haspopup="true" aria-expanded="false">
-                  <i class="fa fa-angle-down" aria-hidden="true"></i>
-                </button>
-              </span>
-            </p>
-          </div>
-
-          <div class="col-sm-12 col-lg-auto px-lg-3 pt-2">
-            <p style="font-size: 12px;">Guests</p>
-            <br />
-            <p>
-              2
-              <span>
-                <button class="btn" type="button" aria-haspopup="true" aria-expanded="false">
-                  <i class="fa fa-angle-down" aria-hidden="true"></i>
-                </button>
-              </span>
-            </p>
-          </div>
-
-          <div class="col-sm-12 col-lg-auto px-lg-3 pt-2">
-            <p style="font-size: 12px;">
-              Rooms
-            </p>
-            <br />
-            <p>
-              Standard
-              <span>
-                <button class="btn" type="button" aria-haspopup="true" aria-expanded="false">
-                  <i class="fa fa-angle-down" aria-hidden="true"></i>
-                </button>
-              </span>
-            </p>
-          </div>
-
-          <div class="col-sm-12 col-lg-auto bg-primary text-white" role="button">
-            <h2 class="pt-4 pb-2">BOOK A ROOM</h2>
-          </div>
+        <div class="booking">
+            <div class="input date check-in">
+                <label for="check-in">Check-in date</label>
+                <input type="date" id="check-in">
+            </div>
+            <div class="input date check-out">
+                <label for="check-in">Check-out date</label>
+                <input type="date" id="check-in">
+            </div>
+            <div class="input guests">
+                <label for="guest-number">Guests</label>
+                <select name="guest-number" id="guest-number">
+                    <option value="1"> 1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    
+                </select>
+            </div>
+            <div class="input room">
+                <label for="room-type"> Room</label>
+                <select name="room-type" id="room-type">
+                    <option value="standard"> standard</option>
+                    <option value="economy">economy</option>
+                    <option value="luxury">luxury</option>
+                    <option value="family">family</option>
+                </select>
+            </div>
+            <button>book a room</button>
         </div>
-      </div>
     </div>
-  </div>
-
+    <script src="js/rooms.js"></script>
 </body>
-
 </html>
