@@ -1,101 +1,82 @@
-.brand-header {
-  font-weight: 400;
-  font-size: 52px;
-  font-family: "Bentham", serif;
-}
-
-.brand-text {
-  font-family: "Bentham", serif;
-  font-size: 28px;
-  font-weight: normal;
-}
-
-.center-bottom {
-  position: absolute;
-  bottom: 20%;
-  left: 20%;
-}
-
-@media (max-width: 1024px) {
-  .center-bottom {
-    position: absolute;
-    bottom: 20%;
-    left: 10%;
-  }
-}
-
-@media (max-width: 992px) {
-  .center-bottom {
-    width: 100%;
-    position: absolute;
-    top: 70%;
-    left: 0;
-  }
-}
-
-/* @media screen and (orientation: landscape) {
-  .center-bottom {
-    position: absolute;
-    top: 100%;
-    left: 0;
-  }
-} */
-
-@media only screen and (max-width: 768px) {
-  .center-bottom {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    margin-bottom: 50px;
-  }
-}
-
-.center-left {
-  position: absolute;
-  top: 30%;
-  left: 10%;
-  color: white;
-}
-
-.date-picker-box {
-  background: white;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-@media only screen and (max-width: 991.9px) {
-  .date-picker-box {
-    background: white;
-    box-shadow: 0px 10px 15px grey;
-  }
-}
-
-img {
-  height: 100vh;
+/* banner area */
+.banner{
+  background-image:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.3)), url("../img/rsz_lounge.jpg");
   width: 100%;
-  position: relative;
+  height: 83vh;
+  background-size: cover;
+  background-position: center center;  background-repeat: no-repeat;
+  padding: 8%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fffafa;
+  font-family: 'Poppins', sans-serif;
 }
-
-.image-container {
-  position: relative;
-  /* text-align: center; */
+.text{
+  width: 90%;
+  align-self: flex-start;
+  height: 70%;
 }
-
-.img-header {
-  font-family: "Bentham", serif;
-  font-weight: normal;
-  font-size: 60px;
+.text .heading{
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
 }
-
-li {
+.text .paragraph{
+  font-size: .9rem;
+}
+.booking{
+  width: 100%;
+  max-width: 700px;
+  /* border: 1px solid red; */
+  display: flex;
   color: black;
+  background-color: #fffafa;
+  height: 70px;
 }
-
-.pt-max {
-  padding-top: 85px;
+.booking .input, .booking button{
+  width: 20%;
 }
-
-.spacer {
-  margin-left: 50px;
-  margin-right: 50px;
+.booking .input{
+  display: grid;
+  grid-template-rows: 1fr 3fr;
+}
+.input label{
+  font-size: .55rem;
+  font-weight: 600;
+  padding: 0;
+  width: 95%;
+  margin: 0 auto;
+  text-align: center;
+}
+.booking input, .booking select{
+  width: 100%;
+  border: 0;
+  outline: none;
+  background-color: transparent;
+  font-size: 0.8rem;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+}
+.booking button{
+  border: 0;
+  outline: none;
+  text-transform: uppercase;
+  background-color: #808052;
+  color: #fffafa;
+  font-family: 'Poppins', sans-serif;
+  font-size: .8rem;
+  cursor: pointer;
+}
+.booking button:active{
+  background-color: #79794f;
+}
+@media screen and (min-width: 790px){
+  .banner{
+      height: 85.5vh;
+  }
+}
+@media screen and (max-width: 790px){
+  .booking button{
+      font-size: .65rem;
+  }
 }
