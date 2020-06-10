@@ -32,7 +32,6 @@
 .booking {
   width: 100%;
   max-width: 700px;
-  /* border: 1px solid red; */
   display: flex;
   color: black;
   background-color: #fffafa;
@@ -65,9 +64,13 @@
   background-color: transparent;
   font-size: 0.8rem;
   font-family: 'Poppins', sans-serif;
+  text-align: center;
   cursor: pointer;
 }
-
+.booking select option{
+  text-align: center;
+  text-transform: capitalize;
+}
 .booking button {
   border: 0;
   outline: none;
@@ -90,11 +93,13 @@
 }
 
 @media screen and (max-width: 790px) {
-
   .booking {
     display: flex;
     flex-direction: column;
     margin-top: 20px;
+    width:fit-content ;
+    height: fit-content;
+    padding-top: 5px;
   }
 
   .booking .input,
@@ -104,9 +109,14 @@
 
   .booking .input {
     display: grid;
-    grid-template-columns: 2fr 3fr;
-    margin-top: 20px;
-    margin-bottom: -40px;
+    grid-template-rows: auto 40px;
+    width: 90%;
+    margin:5px auto;
+    background-color: #c0c0316e;
+    border-radius: 3px;
+  }
+  .booking .room{
+    margin-bottom: 10px;
   }
 
   .input label {
@@ -114,12 +124,12 @@
     font-weight: 600;
     padding: 5px 0;
     width: 100%;
-    margin: 0 auto;
     text-align: center;
+    border-bottom: 0.5px solid #79794f52;
+    line-height: 20px;
   }
-
   .booking button {
-    font-size: .65rem;
+    font-size: .8rem;
     padding: 10px 2px;
   }
 }
