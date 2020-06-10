@@ -94,6 +94,9 @@ form button {
 
 
 @media screen and (max-width: 768px) {
+    .header {
+        margin-bottom: 0px;
+    }
 
     /* GRIDS */
     .col-6 {
@@ -142,6 +145,5 @@ form button {
     .text-small {
         font-size: 22px;
     }
-
     
 }
