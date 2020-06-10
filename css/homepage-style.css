@@ -67,10 +67,12 @@
   text-align: center;
   cursor: pointer;
 }
-.booking select option{
+
+.booking select option {
   text-align: center;
   text-transform: capitalize;
 }
+
 .booking button {
   border: 0;
   outline: none;
@@ -97,7 +99,7 @@
     display: flex;
     flex-direction: column;
     margin-top: 20px;
-    width:fit-content ;
+    width: fit-content;
     height: fit-content;
     padding-top: 5px;
   }
@@ -111,11 +113,16 @@
     display: grid;
     grid-template-rows: auto 40px;
     width: 90%;
-    margin:5px auto;
+    margin: 5px auto;
     background-color: #c0c0316e;
     border-radius: 3px;
   }
-  .booking .room{
+
+  .booking .input input, .booking .input select {
+    padding: 0 12px;
+  }
+
+  .booking .room {
     margin-bottom: 10px;
   }
 
@@ -128,6 +135,7 @@
     border-bottom: 0.5px solid #79794f52;
     line-height: 20px;
   }
+
   .booking button {
     font-size: .8rem;
     padding: 10px 2px;
