@@ -20,15 +20,15 @@ label {
     font-size: 20px;
 }
 
+.header {
+    padding-bottom: 20px;
+}
+
 .page-title {
     background-color: #808052;
     padding: 30px;
     font-family: 'Playfair Display', serif;
     color: #fffafa;
-}
-
-.header {
-    margin-bottom: 20px;
 }
 
 .Container {
@@ -94,9 +94,6 @@ form button {
 
 
 @media screen and (max-width: 768px) {
-    .header {
-        margin-bottom: 0px;
-    }
 
     /* GRIDS */
     .col-6 {
