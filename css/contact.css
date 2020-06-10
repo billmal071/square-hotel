@@ -127,11 +127,11 @@ form button {
 
     form input,
     textarea {
-        padding: 20px;
+        padding: 5px;
     }
 
     form textarea {
-        height: 100px;
+        height: 65px;
         overflow: auto;
         resize: none;
     }
